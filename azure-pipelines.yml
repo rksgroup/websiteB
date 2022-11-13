@@ -18,11 +18,3 @@ steps:
   inputs:
     targetPath: '$(Pipeline.Workspace)'
     publishLocation: 'pipeline'
-- task: VSTest@2
-  inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: |
-      **\*test*.html
-      !**\*TestAdapter.css
-      !**\obj\**
-    searchFolder: '$(System.DefaultWorkingDirectory)'
