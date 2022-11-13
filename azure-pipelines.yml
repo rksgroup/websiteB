@@ -22,7 +22,7 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\*test*.dll
-      !**\*TestAdapter.dll
+      **\*test*.html
+      !**\*TestAdapter.css
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
