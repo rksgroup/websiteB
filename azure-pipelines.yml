@@ -25,8 +25,4 @@ steps:
       **\*test*.dll
       !**\*TestAdapter.dll
       !**\obj\**
-    searchFolder: '$(Pipeline.Workspace)'
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.dll'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
